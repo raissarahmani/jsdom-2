@@ -31,3 +31,18 @@ for (let i=0; i<10; i++) {
 }
 selectFAQ.append(newFAQ)
 
+// No5
+const selectBody = document.querySelector("body")
+const newSection = document.createElement("div")
+selectBody.append(newSection)
+
+const addElement = newSection
+const newButton = document.createElement("button")
+newButton.style.width = `50%`
+addElement.appendChild(newButton)
+
+// No6
+newSection.innerHTML = ``
+const anotherButton = document.createElement("button")
+anotherButton.textContent = `Click Here`
+newSection.insertAdjacentElement("beforeend", anotherButton)
